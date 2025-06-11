@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.nav {
+  height: 90px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: aqua;
+  align-items: center;
+  cursor: pointer;
+}
+.img-session img {
+  position: relative;
+  height: 80px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 40%;
+  animation: rightss 2s ease-in forwards;
+}
+@keyframes rightss {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+}
+
+.links ul li {
+  display: flex;
+  justify-content: space-between;
+  animation: lefts 2s ease-in forwards;
+}
+@keyframes lefts {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial;
+}
+.bt {
+  padding: 8px;
+  align-items: center;
+  font-size: large;
+  border-radius: 40px;
+  border: 1px solid black;
+  animation: buttomm 2s ease-in forwards;
+}
+
+.imgdiv img {
+  height: 500px;
+  width: 500px;
+  animation: leftside 2s ease-in forwards;
+}
+
+@keyframes leftside {
+  from{
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+.whole {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.paradiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+}
+.odia ,.eng {
+  font-size: 35px;
+  animation: rightside 2s ease-in forwards;
+}
+@keyframes rightside {
+  from{
+    opacity: 0;
+    transform: translatex(300px);
+  }
+  to{
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+
+
+.hh{
+text-align: center;
+background-color: blue;
+color: white;
+animation: topp 2s ease-in forwards;
+}
+
+@keyframes topp {
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.hhh{
+text-align: center;
+background-color: blue;
+color: white;
+animation: but 2s ease-in forwards;
+}
+
+@keyframes but {
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+

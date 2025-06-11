@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.nav {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: aqua;
+  align-items: center;
+  cursor: pointer;
+}
+.img-session img {
+  position: relative;
+  height: 80px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 40%;
+  animation: rightss 2s ease-in forwards;
+}
+@keyframes rightss {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+}
+
+.logotext {
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 60px;
+  font: bold;
+}
+
+.rgt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul li {
+  display: flex;
+  justify-content: space-between;
+  animation: lefts 2s ease-in forwards;
+}
+@keyframes lefts {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial;
+}
+.bt {
+  padding: 8px;
+  align-items: center;
+  font-size: large;
+  border-radius: 40px;
+  border: 1px solid black;
+  animation: buttomm 2s ease-in forwards;
+}
+
+@keyframes buttomm {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(-1px);
+  }
+}
+
+ul a {
+  font: bold;
+}
+a:hover {
+  color: red;
+  transform: translateY(-10px);
+}
+.bt:hover {
+  transform: translateY(-10px);
+}
+
+.name,
+.email,
+.area {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+}
+input {
+  padding: 5px;
+}
+.sub {
+  height: 400px;
+  width: 300px;
+  background-color: bisque;
+}
+.btt{
+  margin-top: 20px;
+  padding: 5px;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+.btt:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.sub{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(to right, #5e75c5, #d79e73);
+}
